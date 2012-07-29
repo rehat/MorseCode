@@ -20,7 +20,7 @@
 {
     [super viewDidLoad];
     self.device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self toggleLED:nil];
 }
 
 - (void)viewDidUnload

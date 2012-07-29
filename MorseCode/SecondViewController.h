@@ -17,5 +17,6 @@
 - (IBAction)sendMorseCode:(id)sender;
 - (IBAction)stopMorseCode:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *messageSending;
+@property (weak, nonatomic) IBOutlet UIProgressView *sendingProgress;
 
 @end

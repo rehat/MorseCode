@@ -13,6 +13,7 @@
 @property(weak, nonatomic) AVCaptureDevice *device; 
 @property(strong, nonatomic) NSMutableDictionary *morseCode;
 @property(strong, nonatomic) NSTimer *message;
+@property( nonatomic) NSInteger messageSize;
 -(void)next:(NSTimer *)timer;
 -(void)toggleTorch;
 -(void)sendMessage;
@@ -20,7 +21,8 @@
 @end
 
 @implementation SecondViewController
-@synthesize messageSending = _messageSending, message = _message;
+@synthesize sendingProgress = _sendingProgress;
+@synthesize messageSending = _messageSending, message = _message, messageSize= _messageSize;
 
 
 
@@ -75,12 +77,16 @@
     NSString *location = [[NSBundle mainBundle] pathForResource:@"morseCodes" ofType:@"plist"];
     self.morseCode = [[NSMutableDictionary alloc] initWithContentsOfFile:location];
     
+    
+    
+    
 }
 
 - (void)viewDidUnload
 {
     [self setMessageToSend:nil];
     [self setMessageSending:nil];
+    [self setSendingProgress:nil];
     [super viewDidUnload];
 }
 
@@ -117,7 +123,10 @@
         NSLog(@"%@",[codedMessage objectAtIndex:i]);
     
     if(![self.message isValid]){
+        self.messageSize = [codedMessage count];
         self.messageSending.hidden = NO;
+        [self.sendingProgress setProgress:0.00];
+        self.sendingProgress.hidden = NO;
         self.message = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(next:) userInfo:codedMessage repeats:NO];
     }
 }
@@ -131,7 +140,7 @@
         [self toggleTorch];
     
     if ([timer.userInfo count] != 0) {
-        
+        self.sendingProgress.progress += (1.00/self.messageSize);
         
         if ([[timer.userInfo objectAtIndex:0] isEqualToString: @"dot"]) {
             [self toggleTorch];
@@ -156,6 +165,7 @@
     }
     else {
         self.messageSending.hidden = YES;
+        self.sendingProgress.hidden = YES;
     }
     
     if([timer.userInfo count] > 0)
@@ -211,6 +221,7 @@
 - (IBAction)stopMorseCode:(id)sender {
     if([self.message isValid]){
         self.messageSending.hidden = YES;
+        self.sendingProgress.hidden = YES;
         if(self.device.torchMode == AVCaptureTorchModeOn)
             [self toggleTorch];
         [self.message invalidate];

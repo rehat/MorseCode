@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
         <!--First View Controller - First-->
@@ -80,7 +80,7 @@
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sending Message..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qna-tf-JNG">
-                                <rect key="frame" x="85" y="152" width="151" height="21"/>
+                                <rect key="frame" x="85" y="134" width="151" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -110,6 +110,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" progress="0.5" id="tp2-Pk-iH6">
+                                <rect key="frame" x="43" y="172" width="224" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <connections>
@@ -121,6 +125,7 @@
                     <connections>
                         <outlet property="messageSending" destination="qna-tf-JNG" id="jsn-3W-Jn7"/>
                         <outlet property="messageToSend" destination="2W7-r4-IY8" id="zTr-VM-qJ7"/>
+                        <outlet property="sendingProgress" destination="tp2-Pk-iH6" id="VTN-IP-q9i"/>
                     </connections>
                 </viewController>
             </objects>
