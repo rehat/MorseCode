@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC3297A315C490C50005C955 /* morseCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC3297A215C490C50005C955 /* morseCodes.plist */; };
 		BC6B4DAD15BE140400D61A97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6B4DAC15BE140400D61A97 /* UIKit.framework */; };
 		BC6B4DAF15BE140400D61A97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6B4DAE15BE140400D61A97 /* Foundation.framework */; };
 		BC6B4DB115BE140400D61A97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6B4DB015BE140400D61A97 /* CoreGraphics.framework */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC3297A215C490C50005C955 /* morseCodes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = morseCodes.plist; sourceTree = "<group>"; };
 		BC6B4DA815BE140400D61A97 /* MorseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6B4DAC15BE140400D61A97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BC6B4DAE15BE140400D61A97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -115,6 +117,7 @@
 				BC6B4DB515BE140400D61A97 /* InfoPlist.strings */,
 				BC6B4DB815BE140400D61A97 /* main.m */,
 				BC6B4DBA15BE140400D61A97 /* MorseCode-Prefix.pch */,
+				BC3297A215C490C50005C955 /* morseCodes.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				BC6B4DC715BE140500D61A97 /* first@2x.png in Resources */,
 				BC6B4DCC15BE140500D61A97 /* second.png in Resources */,
 				BC6B4DCE15BE140500D61A97 /* second@2x.png in Resources */,
+				BC3297A315C490C50005C955 /* morseCodes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
