@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC3297A315C490C50005C955 /* morseCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC3297A215C490C50005C955 /* morseCodes.plist */; };
+		BC3297A715C60EB80005C955 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3297A615C60EB80005C955 /* SettingsViewController.m */; };
 		BC6B4DAD15BE140400D61A97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6B4DAC15BE140400D61A97 /* UIKit.framework */; };
 		BC6B4DAF15BE140400D61A97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6B4DAE15BE140400D61A97 /* Foundation.framework */; };
 		BC6B4DB115BE140400D61A97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6B4DB015BE140400D61A97 /* CoreGraphics.framework */; };
@@ -26,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		BC3297A215C490C50005C955 /* morseCodes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = morseCodes.plist; sourceTree = "<group>"; };
+		BC3297A515C60EB80005C955 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		BC3297A615C60EB80005C955 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		BC6B4DA815BE140400D61A97 /* MorseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6B4DAC15BE140400D61A97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BC6B4DAE15BE140400D61A97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,6 +109,8 @@
 				BC6B4DCB15BE140500D61A97 /* second.png */,
 				BC6B4DCD15BE140500D61A97 /* second@2x.png */,
 				BC6B4DB315BE140400D61A97 /* Supporting Files */,
+				BC3297A515C60EB80005C955 /* SettingsViewController.h */,
+				BC3297A615C60EB80005C955 /* SettingsViewController.m */,
 			);
 			path = MorseCode;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				BC6B4DBD15BE140400D61A97 /* AppDelegate.m in Sources */,
 				BC6B4DC315BE140500D61A97 /* FirstViewController.m in Sources */,
 				BC6B4DCA15BE140500D61A97 /* SecondViewController.m in Sources */,
+				BC3297A715C60EB80005C955 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

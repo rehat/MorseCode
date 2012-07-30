@@ -14,7 +14,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSUserDefaults *settings = [NSUserDefaults standardUserDefaults];
+    if(![settings objectForKey:@"firstRun"]){
+        [settings setObject:[NSDate date] forKey:@"firstRun"];
+        [settings setBool:YES forKey:@"startUp"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
     return YES;
 }
 							

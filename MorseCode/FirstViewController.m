@@ -20,7 +20,16 @@
 {
     [super viewDidLoad];
     self.device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-    [self toggleLED:nil];
+    
+    BOOL startUp = [[NSUserDefaults standardUserDefaults] boolForKey:@"startUp"];
+    if(startUp)
+        [self toggleLED:nil];
+}
+
+-(void) viewDidAppear:(BOOL)animated{
+    BOOL startUp = [[NSUserDefaults standardUserDefaults] boolForKey:@"startUp"];
+    if(startUp)
+        [self toggleLED:nil];
 }
 
 - (void)viewDidUnload
