@@ -24,11 +24,28 @@
     BOOL startUp = [[NSUserDefaults standardUserDefaults] boolForKey:@"startUp"];
     if(startUp)
         [self toggleLED:nil];
+    
+    
+//    NSDictionary *textTitleOptions = [NSDictionary dictionaryWithObjectsAndKeys:
+//                                      [UIFont fontWithName:@"DryGoodsAntiqueJL" size:25], UITextAttributeFont,
+//                                      [UIColor whiteColor], UITextAttributeTextColor,
+//                                      [UIColor whiteColor], UITextAttributeTextShadowColor
+//                                      , nil];
+//
+//    UINavigationBar *bar = (UINavigationBar *)[self.view viewWithTag:5];
+//    bar.titleTextAttributes = textTitleOptions;
 }
 
 -(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
     BOOL startUp = [[NSUserDefaults standardUserDefaults] boolForKey:@"startUp"];
     if(startUp)
+        [self toggleLED:nil];
+}
+
+-(void) viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    if(self.device.torchMode == AVCaptureTorchModeOn)
         [self toggleLED:nil];
 }
 

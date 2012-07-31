@@ -8,9 +8,34 @@
 
 #import "AppDelegate.h"
 
+@interface AppDelegate()
+-(void) customizeAppearace;
+@end
+
 @implementation AppDelegate
 
 @synthesize window = _window;
+
+-(void)customizeAppearace{
+    //navbar text
+    [[UINavigationBar appearance]setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+        [UIFont fontWithName:@"DryGoodsAntiqueJL" size:25], UITextAttributeFont,
+        [UIColor blackColor], UITextAttributeTextColor,
+        [UIColor blackColor], UITextAttributeTextShadowColor, nil]];
+   
+    //navbar background
+   
+    UIImage *navBack = [UIImage imageNamed:@"navBar"];
+    [[UINavigationBar appearance] setBackgroundImage:navBack forBarMetrics:UIBarMetricsDefault];
+    
+    //tabbar background
+    UIImage *tabBack = [UIImage imageNamed:@"tabBar"];
+    [[UITabBar appearance] setBackgroundImage:tabBack];
+    
+    UIImage *barItem = [UIImage imageNamed:@"transparent"];
+    [[UIBarButtonItem appearance] setBackgroundImage:barItem forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -20,6 +45,8 @@
         [settings setBool:YES forKey:@"startUp"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
+    [self customizeAppearace];
+    
     return YES;
 }
 							

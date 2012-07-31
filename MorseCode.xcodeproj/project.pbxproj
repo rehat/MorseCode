@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		BC3297A315C490C50005C955 /* morseCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC3297A215C490C50005C955 /* morseCodes.plist */; };
 		BC3297A715C60EB80005C955 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3297A615C60EB80005C955 /* SettingsViewController.m */; };
+		BC3297AD15C6225B0005C955 /* DryGoodsAntiqueJL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC3297AC15C6225B0005C955 /* DryGoodsAntiqueJL.ttf */; };
+		BC3297B415C721A50005C955 /* candle.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3297AE15C721A40005C955 /* candle.png */; };
+		BC3297B515C721A50005C955 /* candle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3297AF15C721A40005C955 /* candle@2x.png */; };
+		BC3297B815C721A50005C955 /* telegraph.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3297B215C721A40005C955 /* telegraph.png */; };
+		BC3297B915C721A50005C955 /* telegraph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3297B315C721A50005C955 /* telegraph@2x.png */; };
+		BC58D67C15C72700004B6F80 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = BC58D67A15C72700004B6F80 /* settings.png */; };
+		BC58D67D15C72700004B6F80 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC58D67B15C72700004B6F80 /* settings@2x.png */; };
+		BC58D68215C72D49004B6F80 /* navBar.png in Resources */ = {isa = PBXBuildFile; fileRef = BC58D67E15C72D49004B6F80 /* navBar.png */; };
+		BC58D68315C72D49004B6F80 /* navBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC58D67F15C72D49004B6F80 /* navBar@2x.png */; };
+		BC58D68C15C77026004B6F80 /* tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = BC58D68A15C77026004B6F80 /* tabBar.png */; };
+		BC58D68D15C77026004B6F80 /* tabBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC58D68B15C77026004B6F80 /* tabBar@2x.png */; };
+		BC58D69415C7784C004B6F80 /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = BC58D69215C7784C004B6F80 /* transparent.png */; };
+		BC58D69515C7784C004B6F80 /* transparent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC58D69315C7784C004B6F80 /* transparent@2x.png */; };
+		BC58D69815C77D10004B6F80 /* MorseCodesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC58D69715C77D10004B6F80 /* MorseCodesViewController.m */; };
 		BC6B4DAD15BE140400D61A97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6B4DAC15BE140400D61A97 /* UIKit.framework */; };
 		BC6B4DAF15BE140400D61A97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6B4DAE15BE140400D61A97 /* Foundation.framework */; };
 		BC6B4DB115BE140400D61A97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6B4DB015BE140400D61A97 /* CoreGraphics.framework */; };
@@ -17,11 +31,7 @@
 		BC6B4DBD15BE140400D61A97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B4DBC15BE140400D61A97 /* AppDelegate.m */; };
 		BC6B4DC015BE140400D61A97 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6B4DBE15BE140400D61A97 /* MainStoryboard.storyboard */; };
 		BC6B4DC315BE140500D61A97 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B4DC215BE140500D61A97 /* FirstViewController.m */; };
-		BC6B4DC515BE140500D61A97 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6B4DC415BE140500D61A97 /* first.png */; };
-		BC6B4DC715BE140500D61A97 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6B4DC615BE140500D61A97 /* first@2x.png */; };
 		BC6B4DCA15BE140500D61A97 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B4DC915BE140500D61A97 /* SecondViewController.m */; };
-		BC6B4DCC15BE140500D61A97 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6B4DCB15BE140500D61A97 /* second.png */; };
-		BC6B4DCE15BE140500D61A97 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6B4DCD15BE140500D61A97 /* second@2x.png */; };
 		BC6B4DD515BE274500D61A97 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6B4DD415BE274500D61A97 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +39,21 @@
 		BC3297A215C490C50005C955 /* morseCodes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = morseCodes.plist; sourceTree = "<group>"; };
 		BC3297A515C60EB80005C955 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		BC3297A615C60EB80005C955 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		BC3297AC15C6225B0005C955 /* DryGoodsAntiqueJL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DryGoodsAntiqueJL.ttf; sourceTree = "<group>"; };
+		BC3297AE15C721A40005C955 /* candle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = candle.png; sourceTree = "<group>"; };
+		BC3297AF15C721A40005C955 /* candle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "candle@2x.png"; sourceTree = "<group>"; };
+		BC3297B215C721A40005C955 /* telegraph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = telegraph.png; sourceTree = "<group>"; };
+		BC3297B315C721A50005C955 /* telegraph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "telegraph@2x.png"; sourceTree = "<group>"; };
+		BC58D67A15C72700004B6F80 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		BC58D67B15C72700004B6F80 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		BC58D67E15C72D49004B6F80 /* navBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navBar.png; sourceTree = "<group>"; };
+		BC58D67F15C72D49004B6F80 /* navBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navBar@2x.png"; sourceTree = "<group>"; };
+		BC58D68A15C77026004B6F80 /* tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar.png; sourceTree = "<group>"; };
+		BC58D68B15C77026004B6F80 /* tabBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar@2x.png"; sourceTree = "<group>"; };
+		BC58D69215C7784C004B6F80 /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent.png; sourceTree = "<group>"; };
+		BC58D69315C7784C004B6F80 /* transparent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent@2x.png"; sourceTree = "<group>"; };
+		BC58D69615C77D10004B6F80 /* MorseCodesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MorseCodesViewController.h; sourceTree = "<group>"; };
+		BC58D69715C77D10004B6F80 /* MorseCodesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MorseCodesViewController.m; sourceTree = "<group>"; };
 		BC6B4DA815BE140400D61A97 /* MorseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6B4DAC15BE140400D61A97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BC6B4DAE15BE140400D61A97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,12 +67,8 @@
 		BC6B4DBF15BE140400D61A97 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BC6B4DC115BE140500D61A97 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		BC6B4DC215BE140500D61A97 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		BC6B4DC415BE140500D61A97 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		BC6B4DC615BE140500D61A97 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		BC6B4DC815BE140500D61A97 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		BC6B4DC915BE140500D61A97 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		BC6B4DCB15BE140500D61A97 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		BC6B4DCD15BE140500D61A97 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		BC6B4DD415BE274500D61A97 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -102,15 +123,26 @@
 				BC6B4DBE15BE140400D61A97 /* MainStoryboard.storyboard */,
 				BC6B4DC115BE140500D61A97 /* FirstViewController.h */,
 				BC6B4DC215BE140500D61A97 /* FirstViewController.m */,
-				BC6B4DC415BE140500D61A97 /* first.png */,
-				BC6B4DC615BE140500D61A97 /* first@2x.png */,
+				BC3297AC15C6225B0005C955 /* DryGoodsAntiqueJL.ttf */,
+				BC3297AE15C721A40005C955 /* candle.png */,
+				BC3297AF15C721A40005C955 /* candle@2x.png */,
+				BC58D69215C7784C004B6F80 /* transparent.png */,
+				BC58D69315C7784C004B6F80 /* transparent@2x.png */,
+				BC3297B215C721A40005C955 /* telegraph.png */,
+				BC58D68A15C77026004B6F80 /* tabBar.png */,
+				BC58D68B15C77026004B6F80 /* tabBar@2x.png */,
+				BC58D67E15C72D49004B6F80 /* navBar.png */,
+				BC58D67F15C72D49004B6F80 /* navBar@2x.png */,
+				BC58D67A15C72700004B6F80 /* settings.png */,
+				BC58D67B15C72700004B6F80 /* settings@2x.png */,
+				BC3297B315C721A50005C955 /* telegraph@2x.png */,
 				BC6B4DC815BE140500D61A97 /* SecondViewController.h */,
 				BC6B4DC915BE140500D61A97 /* SecondViewController.m */,
-				BC6B4DCB15BE140500D61A97 /* second.png */,
-				BC6B4DCD15BE140500D61A97 /* second@2x.png */,
 				BC6B4DB315BE140400D61A97 /* Supporting Files */,
 				BC3297A515C60EB80005C955 /* SettingsViewController.h */,
 				BC3297A615C60EB80005C955 /* SettingsViewController.m */,
+				BC58D69615C77D10004B6F80 /* MorseCodesViewController.h */,
+				BC58D69715C77D10004B6F80 /* MorseCodesViewController.m */,
 			);
 			path = MorseCode;
 			sourceTree = "<group>";
@@ -179,11 +211,20 @@
 			files = (
 				BC6B4DB715BE140400D61A97 /* InfoPlist.strings in Resources */,
 				BC6B4DC015BE140400D61A97 /* MainStoryboard.storyboard in Resources */,
-				BC6B4DC515BE140500D61A97 /* first.png in Resources */,
-				BC6B4DC715BE140500D61A97 /* first@2x.png in Resources */,
-				BC6B4DCC15BE140500D61A97 /* second.png in Resources */,
-				BC6B4DCE15BE140500D61A97 /* second@2x.png in Resources */,
 				BC3297A315C490C50005C955 /* morseCodes.plist in Resources */,
+				BC3297AD15C6225B0005C955 /* DryGoodsAntiqueJL.ttf in Resources */,
+				BC3297B415C721A50005C955 /* candle.png in Resources */,
+				BC3297B515C721A50005C955 /* candle@2x.png in Resources */,
+				BC3297B815C721A50005C955 /* telegraph.png in Resources */,
+				BC3297B915C721A50005C955 /* telegraph@2x.png in Resources */,
+				BC58D67C15C72700004B6F80 /* settings.png in Resources */,
+				BC58D67D15C72700004B6F80 /* settings@2x.png in Resources */,
+				BC58D68215C72D49004B6F80 /* navBar.png in Resources */,
+				BC58D68315C72D49004B6F80 /* navBar@2x.png in Resources */,
+				BC58D68C15C77026004B6F80 /* tabBar.png in Resources */,
+				BC58D68D15C77026004B6F80 /* tabBar@2x.png in Resources */,
+				BC58D69415C7784C004B6F80 /* transparent.png in Resources */,
+				BC58D69515C7784C004B6F80 /* transparent@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +240,7 @@
 				BC6B4DC315BE140500D61A97 /* FirstViewController.m in Sources */,
 				BC6B4DCA15BE140500D61A97 /* SecondViewController.m in Sources */,
 				BC3297A715C60EB80005C955 /* SettingsViewController.m in Sources */,
+				BC58D69815C77D10004B6F80 /* MorseCodesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@
 
 @interface SecondViewController ()
 @property(weak, nonatomic) AVCaptureDevice *device; 
-@property(strong, nonatomic) NSMutableDictionary *morseCode;
+@property(strong, nonatomic) NSDictionary *morseCode;
 @property(strong, nonatomic) NSTimer *message;
 @property( nonatomic) NSInteger messageSize;
 -(void)next:(NSTimer *)timer;
@@ -22,6 +22,7 @@
 
 @implementation SecondViewController
 @synthesize sendingProgress = _sendingProgress;
+@synthesize actionButton = _actionButton;
 @synthesize messageSending = _messageSending, message = _message, messageSize= _messageSize;
 
 
@@ -33,49 +34,10 @@
 {
     [super viewDidLoad];
     self.device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-    
-//    //setup morseCode  might try loading from a plist later
-//    self.morseCode = [[NSMutableDictionary alloc] init ];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dash", nil] forKey:@"A"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dot",@"dot",@"dot", nil] forKey:@"B"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dot",@"dash",@"dot", nil] forKey:@"C"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dot",@"dot", nil] forKey:@"D"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot", nil] forKey:@"E"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dot",@"dash",@"dot", nil] forKey:@"F"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dash",@"dot", nil] forKey:@"G"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dot",@"dot",@"dot", nil] forKey:@"H"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dot", nil] forKey:@"I"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dash",@"dash",@"dash", nil] forKey:@"J"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dot",@"dash", nil] forKey:@"K"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dash",@"dot",@"dot", nil] forKey:@"L"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dash", nil] forKey:@"M"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dot", nil] forKey:@"N"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dash",@"dash", nil] forKey:@"O"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dash",@"dash",@"dot", nil] forKey:@"P"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dash",@"dot",@"dash", nil] forKey:@"Q"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dash",@"dot", nil] forKey:@"R"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dot",@"dot", nil] forKey:@"S"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash", nil] forKey:@"T"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dot",@"dash", nil] forKey:@"U"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dot",@"dot",@"dash", nil] forKey:@"V"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dash",@"dash", nil] forKey:@"W"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dot",@"dot",@"dash", nil] forKey:@"X"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dot",@"dash",@"dash", nil] forKey:@"Y"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dash",@"dot",@"dot", nil] forKey:@"Z"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dash",@"dash",@"dash",@"dash", nil] forKey:@"1"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dot",@"dash",@"dash",@"dash", nil] forKey:@"2"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dot",@"dot",@"dash",@"dash", nil] forKey:@"3"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dot",@"dot",@"dot",@"dash", nil] forKey:@"4"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dot",@"dot",@"dot",@"dot",@"dot", nil] forKey:@"5"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dot",@"dot",@"dot",@"dot", nil] forKey:@"6"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dash",@"dot",@"dot", @"dot",nil] forKey:@"7"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dash",@"dash", @"dot",@"dot",nil] forKey:@"8"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dash",@"dash",@"dash",@"dot", nil] forKey:@"9"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"dash",@"dash",@"dash",@"dash",@"dash", nil] forKey:@"0"];
-//    [self.morseCode setValue:[[NSArray alloc] initWithObjects:@"space", nil] forKey:@" "];
+
     
     NSString *location = [[NSBundle mainBundle] pathForResource:@"morseCodes" ofType:@"plist"];
-    self.morseCode = [[NSMutableDictionary alloc] initWithContentsOfFile:location];
+    self.morseCode = [[NSDictionary alloc] initWithContentsOfFile:location];
     
     
     
@@ -87,6 +49,7 @@
     [self setMessageToSend:nil];
     [self setMessageSending:nil];
     [self setSendingProgress:nil];
+    [self setActionButton:nil];
     [super viewDidUnload];
 }
 
@@ -128,6 +91,8 @@
         [self.sendingProgress setProgress:0.00];
         self.sendingProgress.hidden = NO;
         self.message = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(next:) userInfo:codedMessage repeats:NO];
+        self.actionButton.titleLabel.text = @"Stop";
+
     }
 }
 
@@ -166,6 +131,7 @@
     else {
         self.messageSending.hidden = YES;
         self.sendingProgress.hidden = YES;
+        [self.actionButton setTitle:@"Send" forState:UIControlStateNormal];
     }
     
     if([timer.userInfo count] > 0)
@@ -204,7 +170,6 @@
 {
     [self.messageToSend resignFirstResponder];
     return YES;
-    
 }
 
 
@@ -214,8 +179,19 @@
 }
 
 - (IBAction)sendMorseCode:(id)sender {
-    
-    [self sendMessage];
+   
+    if([self.message isValid]){
+        self.messageSending.hidden = YES;
+        self.sendingProgress.hidden = YES;
+        if(self.device.torchMode == AVCaptureTorchModeOn)
+            [self toggleTorch];
+        [self.message invalidate];
+        [self.actionButton setTitle:@"Send" forState:UIControlStateNormal];
+    }
+    else{
+        [self.actionButton setTitle:@"Stop" forState:UIControlStateNormal];
+        [self sendMessage];
+    }
 }
 
 - (IBAction)stopMorseCode:(id)sender {

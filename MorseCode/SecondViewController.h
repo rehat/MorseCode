@@ -15,8 +15,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *messageToSend;
 - (IBAction)dismissKeyboard:(id)sender;
 - (IBAction)sendMorseCode:(id)sender;
-- (IBAction)stopMorseCode:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *messageSending;
 @property (weak, nonatomic) IBOutlet UIProgressView *sendingProgress;
+@property (weak, nonatomic) IBOutlet UIButton *actionButton;
 
 @end
