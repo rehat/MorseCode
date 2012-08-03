@@ -23,6 +23,7 @@
 @implementation SecondViewController
 @synthesize sendingProgress = _sendingProgress;
 @synthesize actionButton = _actionButton;
+@synthesize titleLabel = _titleLabel;
 @synthesize messageSending = _messageSending, message = _message, messageSize= _messageSize;
 
 
@@ -39,7 +40,7 @@
     NSString *location = [[NSBundle mainBundle] pathForResource:@"morseCodes" ofType:@"plist"];
     self.morseCode = [[NSDictionary alloc] initWithContentsOfFile:location];
     
-    
+    self.titleLabel.font = [UIFont fontWithName:@"DryGoodsAntiqueJL" size:35];
     
     
 }
@@ -50,6 +51,7 @@
     [self setMessageSending:nil];
     [self setSendingProgress:nil];
     [self setActionButton:nil];
+    [self setTitleLabel:nil];
     [super viewDidUnload];
 }
 
@@ -99,7 +101,7 @@
 
 -(void)next:(NSTimer *)timer{
     
-    double speed = 0.35;
+    double speed = 0.25;
     
     if(self.device.torchMode == AVCaptureTorchModeOn)
         [self toggleTorch];

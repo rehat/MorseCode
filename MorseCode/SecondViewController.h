@@ -18,5 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *messageSending;
 @property (weak, nonatomic) IBOutlet UIProgressView *sendingProgress;
 @property (weak, nonatomic) IBOutlet UIButton *actionButton;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end

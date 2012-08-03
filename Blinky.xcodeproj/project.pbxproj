@@ -14,6 +14,15 @@
 		BC3297B515C721A50005C955 /* candle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3297AF15C721A40005C955 /* candle@2x.png */; };
 		BC3297B815C721A50005C955 /* telegraph.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3297B215C721A40005C955 /* telegraph.png */; };
 		BC3297B915C721A50005C955 /* telegraph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3297B315C721A50005C955 /* telegraph@2x.png */; };
+		BC484B4715CA046500B8E4F3 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = BC484B3F15CA046500B8E4F3 /* Icon-72.png */; };
+		BC484B4815CA046500B8E4F3 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC484B4015CA046500B8E4F3 /* Icon-72@2x.png */; };
+		BC484B4915CA046500B8E4F3 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BC484B4115CA046500B8E4F3 /* Icon-Small-50.png */; };
+		BC484B4A15CA046500B8E4F3 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = BC484B4215CA046500B8E4F3 /* Icon-Small.png */; };
+		BC484B4B15CA046500B8E4F3 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC484B4315CA046500B8E4F3 /* Icon-Small@2x.png */; };
+		BC484B4C15CA046500B8E4F3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC484B4415CA046500B8E4F3 /* Icon.png */; };
+		BC484B4D15CA046500B8E4F3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC484B4515CA046500B8E4F3 /* Icon@2x.png */; };
+		BC484B4E15CA046500B8E4F3 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = BC484B4615CA046500B8E4F3 /* iTunesArtwork */; };
+		BC484B5115CA172200B8E4F3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC484B5015CA172200B8E4F3 /* Default@2x.png */; };
 		BC58D67C15C72700004B6F80 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = BC58D67A15C72700004B6F80 /* settings.png */; };
 		BC58D67D15C72700004B6F80 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC58D67B15C72700004B6F80 /* settings@2x.png */; };
 		BC58D68215C72D49004B6F80 /* navBar.png in Resources */ = {isa = PBXBuildFile; fileRef = BC58D67E15C72D49004B6F80 /* navBar.png */; };
@@ -33,6 +42,9 @@
 		BC6B4DC315BE140500D61A97 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B4DC215BE140500D61A97 /* FirstViewController.m */; };
 		BC6B4DCA15BE140500D61A97 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B4DC915BE140500D61A97 /* SecondViewController.m */; };
 		BC6B4DD515BE274500D61A97 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6B4DD415BE274500D61A97 /* AVFoundation.framework */; };
+		BC74B46A15CA361400CD5A2B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC74B46915CA361400CD5A2B /* Icon@2x.png */; };
+		BCE66D9815C9A95E0035D3DF /* codes.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE66D9615C9A95E0035D3DF /* codes.png */; };
+		BCE66D9915C9A95E0035D3DF /* codes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE66D9715C9A95E0035D3DF /* codes@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +56,15 @@
 		BC3297AF15C721A40005C955 /* candle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "candle@2x.png"; sourceTree = "<group>"; };
 		BC3297B215C721A40005C955 /* telegraph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = telegraph.png; sourceTree = "<group>"; };
 		BC3297B315C721A50005C955 /* telegraph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "telegraph@2x.png"; sourceTree = "<group>"; };
+		BC484B3F15CA046500B8E4F3 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "icon/Icon-72.png"; sourceTree = "<group>"; };
+		BC484B4015CA046500B8E4F3 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "icon/Icon-72@2x.png"; sourceTree = "<group>"; };
+		BC484B4115CA046500B8E4F3 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "icon/Icon-Small-50.png"; sourceTree = "<group>"; };
+		BC484B4215CA046500B8E4F3 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "icon/Icon-Small.png"; sourceTree = "<group>"; };
+		BC484B4315CA046500B8E4F3 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "icon/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		BC484B4415CA046500B8E4F3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = MorseCode/icon/Icon.png; sourceTree = "<group>"; };
+		BC484B4515CA046500B8E4F3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "icon/Icon@2x.png"; sourceTree = "<group>"; };
+		BC484B4615CA046500B8E4F3 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = icon/iTunesArtwork; sourceTree = "<group>"; };
+		BC484B5015CA172200B8E4F3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BC58D67A15C72700004B6F80 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		BC58D67B15C72700004B6F80 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
 		BC58D67E15C72D49004B6F80 /* navBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navBar.png; sourceTree = "<group>"; };
@@ -54,14 +75,14 @@
 		BC58D69315C7784C004B6F80 /* transparent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent@2x.png"; sourceTree = "<group>"; };
 		BC58D69615C77D10004B6F80 /* MorseCodesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MorseCodesViewController.h; sourceTree = "<group>"; };
 		BC58D69715C77D10004B6F80 /* MorseCodesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MorseCodesViewController.m; sourceTree = "<group>"; };
-		BC6B4DA815BE140400D61A97 /* MorseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6B4DA815BE140400D61A97 /* Blinky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blinky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6B4DAC15BE140400D61A97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BC6B4DAE15BE140400D61A97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BC6B4DB015BE140400D61A97 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		BC6B4DB415BE140400D61A97 /* MorseCode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MorseCode-Info.plist"; sourceTree = "<group>"; };
+		BC6B4DB415BE140400D61A97 /* Blinky-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Blinky-Info.plist"; sourceTree = "<group>"; };
 		BC6B4DB615BE140400D61A97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC6B4DB815BE140400D61A97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BC6B4DBA15BE140400D61A97 /* MorseCode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MorseCode-Prefix.pch"; sourceTree = "<group>"; };
+		BC6B4DBA15BE140400D61A97 /* Blinky-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blinky-Prefix.pch"; sourceTree = "<group>"; };
 		BC6B4DBB15BE140400D61A97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC6B4DBC15BE140400D61A97 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BC6B4DBF15BE140400D61A97 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -70,6 +91,9 @@
 		BC6B4DC815BE140500D61A97 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		BC6B4DC915BE140500D61A97 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BC6B4DD415BE274500D61A97 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BC74B46915CA361400CD5A2B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		BCE66D9615C9A95E0035D3DF /* codes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codes.png; sourceTree = "<group>"; };
+		BCE66D9715C9A95E0035D3DF /* codes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "codes@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +114,9 @@
 		BC6B4D9D15BE140400D61A97 = {
 			isa = PBXGroup;
 			children = (
+				BC74B46915CA361400CD5A2B /* Icon@2x.png */,
+				BC484B4415CA046500B8E4F3 /* Icon.png */,
+				BC484B5015CA172200B8E4F3 /* Default@2x.png */,
 				BC6B4DB215BE140400D61A97 /* MorseCode */,
 				BC6B4DAB15BE140400D61A97 /* Frameworks */,
 				BC6B4DA915BE140400D61A97 /* Products */,
@@ -99,7 +126,7 @@
 		BC6B4DA915BE140400D61A97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BC6B4DA815BE140400D61A97 /* MorseCode.app */,
+				BC6B4DA815BE140400D61A97 /* Blinky.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +152,13 @@
 				BC6B4DC215BE140500D61A97 /* FirstViewController.m */,
 				BC3297AC15C6225B0005C955 /* DryGoodsAntiqueJL.ttf */,
 				BC3297AE15C721A40005C955 /* candle.png */,
+				BC484B3F15CA046500B8E4F3 /* Icon-72.png */,
+				BC484B4015CA046500B8E4F3 /* Icon-72@2x.png */,
+				BC484B4115CA046500B8E4F3 /* Icon-Small-50.png */,
+				BC484B4215CA046500B8E4F3 /* Icon-Small.png */,
+				BC484B4315CA046500B8E4F3 /* Icon-Small@2x.png */,
+				BC484B4515CA046500B8E4F3 /* Icon@2x.png */,
+				BC484B4615CA046500B8E4F3 /* iTunesArtwork */,
 				BC3297AF15C721A40005C955 /* candle@2x.png */,
 				BC58D69215C7784C004B6F80 /* transparent.png */,
 				BC58D69315C7784C004B6F80 /* transparent@2x.png */,
@@ -132,6 +166,8 @@
 				BC58D68A15C77026004B6F80 /* tabBar.png */,
 				BC58D68B15C77026004B6F80 /* tabBar@2x.png */,
 				BC58D67E15C72D49004B6F80 /* navBar.png */,
+				BCE66D9615C9A95E0035D3DF /* codes.png */,
+				BCE66D9715C9A95E0035D3DF /* codes@2x.png */,
 				BC58D67F15C72D49004B6F80 /* navBar@2x.png */,
 				BC58D67A15C72700004B6F80 /* settings.png */,
 				BC58D67B15C72700004B6F80 /* settings@2x.png */,
@@ -150,10 +186,10 @@
 		BC6B4DB315BE140400D61A97 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BC6B4DB415BE140400D61A97 /* MorseCode-Info.plist */,
+				BC6B4DB415BE140400D61A97 /* Blinky-Info.plist */,
 				BC6B4DB515BE140400D61A97 /* InfoPlist.strings */,
 				BC6B4DB815BE140400D61A97 /* main.m */,
-				BC6B4DBA15BE140400D61A97 /* MorseCode-Prefix.pch */,
+				BC6B4DBA15BE140400D61A97 /* Blinky-Prefix.pch */,
 				BC3297A215C490C50005C955 /* morseCodes.plist */,
 			);
 			name = "Supporting Files";
@@ -162,9 +198,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BC6B4DA715BE140400D61A97 /* MorseCode */ = {
+		BC6B4DA715BE140400D61A97 /* Blinky */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC6B4DD115BE140500D61A97 /* Build configuration list for PBXNativeTarget "MorseCode" */;
+			buildConfigurationList = BC6B4DD115BE140500D61A97 /* Build configuration list for PBXNativeTarget "Blinky" */;
 			buildPhases = (
 				BC6B4DA415BE140400D61A97 /* Sources */,
 				BC6B4DA515BE140400D61A97 /* Frameworks */,
@@ -174,9 +210,9 @@
 			);
 			dependencies = (
 			);
-			name = MorseCode;
+			name = Blinky;
 			productName = MorseCode;
-			productReference = BC6B4DA815BE140400D61A97 /* MorseCode.app */;
+			productReference = BC6B4DA815BE140400D61A97 /* Blinky.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -187,7 +223,7 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = BC6B4DA215BE140400D61A97 /* Build configuration list for PBXProject "MorseCode" */;
+			buildConfigurationList = BC6B4DA215BE140400D61A97 /* Build configuration list for PBXProject "Blinky" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -199,7 +235,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BC6B4DA715BE140400D61A97 /* MorseCode */,
+				BC6B4DA715BE140400D61A97 /* Blinky */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +261,18 @@
 				BC58D68D15C77026004B6F80 /* tabBar@2x.png in Resources */,
 				BC58D69415C7784C004B6F80 /* transparent.png in Resources */,
 				BC58D69515C7784C004B6F80 /* transparent@2x.png in Resources */,
+				BCE66D9815C9A95E0035D3DF /* codes.png in Resources */,
+				BCE66D9915C9A95E0035D3DF /* codes@2x.png in Resources */,
+				BC484B4715CA046500B8E4F3 /* Icon-72.png in Resources */,
+				BC484B4815CA046500B8E4F3 /* Icon-72@2x.png in Resources */,
+				BC484B4915CA046500B8E4F3 /* Icon-Small-50.png in Resources */,
+				BC484B4A15CA046500B8E4F3 /* Icon-Small.png in Resources */,
+				BC484B4B15CA046500B8E4F3 /* Icon-Small@2x.png in Resources */,
+				BC484B4C15CA046500B8E4F3 /* Icon.png in Resources */,
+				BC484B4D15CA046500B8E4F3 /* Icon@2x.png in Resources */,
+				BC484B4E15CA046500B8E4F3 /* iTunesArtwork in Resources */,
+				BC484B5115CA172200B8E4F3 /* Default@2x.png in Resources */,
+				BC74B46A15CA361400CD5A2B /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,10 +362,14 @@
 		BC6B4DD215BE140500D61A97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MorseCode/MorseCode-Prefix.pch";
-				INFOPLIST_FILE = "MorseCode/MorseCode-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MorseCode/Blinky-Prefix.pch";
+				INFOPLIST_FILE = "MorseCode/Blinky-Info.plist";
+				PRODUCT_NAME = Blinky;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -325,10 +377,14 @@
 		BC6B4DD315BE140500D61A97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MorseCode/MorseCode-Prefix.pch";
-				INFOPLIST_FILE = "MorseCode/MorseCode-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MorseCode/Blinky-Prefix.pch";
+				INFOPLIST_FILE = "MorseCode/Blinky-Info.plist";
+				PRODUCT_NAME = Blinky;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -336,7 +392,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BC6B4DA215BE140400D61A97 /* Build configuration list for PBXProject "MorseCode" */ = {
+		BC6B4DA215BE140400D61A97 /* Build configuration list for PBXProject "Blinky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC6B4DCF15BE140500D61A97 /* Debug */,
@@ -345,7 +401,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC6B4DD115BE140500D61A97 /* Build configuration list for PBXNativeTarget "MorseCode" */ = {
+		BC6B4DD115BE140500D61A97 /* Build configuration list for PBXNativeTarget "Blinky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC6B4DD215BE140500D61A97 /* Debug */,

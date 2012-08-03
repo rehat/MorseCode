@@ -14,33 +14,31 @@
 @end
 
 @implementation FirstViewController
+@synthesize lightSwitch = _lightSwitch;
+@synthesize switchLabel = _switchLabel;
 @synthesize device = _device;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+
+
     
-    BOOL startUp = [[NSUserDefaults standardUserDefaults] boolForKey:@"startUp"];
-    if(startUp)
-        [self toggleLED:nil];
-    
-    
-//    NSDictionary *textTitleOptions = [NSDictionary dictionaryWithObjectsAndKeys:
-//                                      [UIFont fontWithName:@"DryGoodsAntiqueJL" size:25], UITextAttributeFont,
-//                                      [UIColor whiteColor], UITextAttributeTextColor,
-//                                      [UIColor whiteColor], UITextAttributeTextShadowColor
-//                                      , nil];
-//
-//    UINavigationBar *bar = (UINavigationBar *)[self.view viewWithTag:5];
-//    bar.titleTextAttributes = textTitleOptions;
+    self.switchLabel.font = [UIFont fontWithName:@"DryGoodsAntiqueJL" size:35];
+
 }
 
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     BOOL startUp = [[NSUserDefaults standardUserDefaults] boolForKey:@"startUp"];
-    if(startUp)
+    if(startUp){
         [self toggleLED:nil];
+        [self.lightSwitch setOn:YES animated:YES];
+    }
+    else
+        [self.lightSwitch setOn:NO animated:YES];
+
 }
 
 -(void) viewDidDisappear:(BOOL)animated{
@@ -51,6 +49,8 @@
 
 - (void)viewDidUnload
 {
+    [self setLightSwitch:nil];
+    [self setSwitchLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -65,10 +65,14 @@
     if([self.device hasTorch]){
         [self.device lockForConfiguration:nil];  
 
-        if(self.device.torchMode == AVCaptureTorchModeOn)
+        if(self.device.torchMode == AVCaptureTorchModeOn){
             [self.device setTorchMode:AVCaptureTorchModeOff];
-        else 
+            [self.lightSwitch setOn:NO animated:YES];
+        }
+        else {
             [self.device setTorchMode:AVCaptureTorchModeOn];
+            [self.lightSwitch setOn:YES animated:YES];
+        }
         
         [self.device unlockForConfiguration];
 

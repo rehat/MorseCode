@@ -32,8 +32,7 @@
     UIImage *tabBack = [UIImage imageNamed:@"tabBar"];
     [[UITabBar appearance] setBackgroundImage:tabBack];
     
-    UIImage *barItem = [UIImage imageNamed:@"transparent"];
-    [[UIBarButtonItem appearance] setBackgroundImage:barItem forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+
 }
 
 

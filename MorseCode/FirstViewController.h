@@ -12,5 +12,7 @@
 
 @interface FirstViewController : UIViewController
 - (IBAction)toggleLED:(id)sender;
+@property (weak, nonatomic) IBOutlet UISwitch *lightSwitch;
+@property (weak, nonatomic) IBOutlet UILabel *switchLabel;
 
 @end
